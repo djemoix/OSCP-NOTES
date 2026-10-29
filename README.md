@@ -1,62 +1,39 @@
-# 🛡 Offensive Security & Cybersecurity Playbook
-**Author: Manish Verma**
+# OSCP Preparation Notes
 
----
+**Manish Verma** · Reconnaissance · Active Directory · Structured security learning
 
-## 📌 About This Repository
+A growing collection of personal notes and references for **authorized penetration testing labs** and OSCP preparation. The content here is learning material — it does **not** indicate OSCP certification or a complete course syllabus.
 
-This repository contains my structured cybersecurity notes, methodologies, and practical workflows used for:
+## What's actually in this repository
 
-- OSCP preparation
-- Internal network penetration testing
-- Active Directory attacks
-- Web application testing
-- Red Team operations
-- Blue Team detection awareness
-- Real-world pentest reporting
+| Path | Content |
+| --- | --- |
+| [01-Recon](01-Recon/README.md) | Exiftool, DNS, NetBIOS, SNMP and SMTP enumeration notes |
+| [03-Active-Directory-Attack-Flow](03-Active-Directory-Attack-Flow/README.md) | High-level AD assessment techniques and a basic enumeration reference |
+| [FTP ENUMERATION](FTP%20ENUMERATION/) | Legacy scratch directory; review before using as a reference |
 
-The content is organized in a practical, command-focused format to simulate real penetration testing scenarios.
+The previously documented 00–12 chapter structure was a roadmap, **not** an accurate representation of files already committed. This index lists only the material actually present.
 
----
+## Study workflow
 
-## 📂 Repository Structure
+1. **Scope:** Use isolated labs or systems explicitly authorized for testing.
+2. **Enumerate:** Build a repeatable service and host information checklist.
+3. **Analyze:** Record observations, evidence and assumptions.
+4. **Learn defenses:** Review logging and potential detection for each technique.
+5. **Document:** Write concise findings, reproduction notes and remediation ideas.
 
-```
-00 - Kali Linux Master Commands
-01 - Port Wise Enumeration Playbook
-02 - Web Exploitation
-03 - Active Directory Attack Flow
-04 - Privilege Escalation
-05 - Pivoting & Tunneling
-06 - Internal Network Attack Playbook
-07 - Red Team Advanced Notes
-08 - Bug Bounty Methodology
-09 - Web Deep Dive (JWT, SSRF, OAuth, Deserialization)
-10 - SOC Analyst Cheat Sheet
-11 - Blue Team Detection Notes
-12 - OSCP & Pentest Report Templates
-```
+## Related reference
 
----
+[Offensive Security & Blue Team KnowledgeBase](https://github.com/djemoix/Offensive-Security-KnowledgeBase) has a broader, organized collection covering enumeration, web testing, privilege escalation, SOC analysis and reporting.
 
-## 🧠 Methodology Philosophy
+## Next documentation improvements
 
-- Enumeration > Exploitation
-- Slow is smooth, smooth is fast
-- Credentials reuse is key
-- Document everything
+- [ ] Expand host/service recon workflows with prerequisites and expected output.
+- [ ] Add evidence collection and reporting templates.
+- [ ] Add defensive mappings and lab-safe exercises.
+- [ ] Review older tool names and commands for version compatibility.
+- [ ] Gradually reconcile the legacy FTP scratch directory.
 
----
+## Ethical use
 
-## 🎯 Goals
-
-- Build strong offensive security fundamentals
-- Improve structured thinking in penetration testing
-- Maintain professional documentation standards
-- Prepare for OSCP and real-world pentesting roles
-
----
-
-## ⚠ Disclaimer
-
-All techniques documented here are for educational purposes and must only be used in authorized environments.
+All material is for educational use, authorized labs and permitted security testing. Do not include real-world credentials, customer information or out-of-scope targets.
