@@ -1,39 +1,43 @@
-# OSCP Preparation Notes
+# OSCP Preparation Knowledgebase
 
-**Manish Verma** · Reconnaissance · Active Directory · Structured security learning
+A focused, evolving knowledgebase for preparing for practical penetration-testing work and OSCP-style labs.
 
-A growing collection of personal notes and references for **authorized penetration testing labs** and OSCP preparation. The content here is learning material — it does **not** indicate OSCP certification or a complete course syllabus.
+> This repository documents study notes and lab practice only. It does **not** indicate OSCP certification, exam completion, or endorsement by Offensive Security.
 
-## What's actually in this repository
+## Start here
 
-| Path | Content |
+- [Navigation](NAVIGATION.md)
+- [Roadmap](ROADMAP.md)
+- [Enumeration checklist](CHECKLISTS/ENUMERATION.md)
+- [Lab note template](TEMPLATES/LAB-NOTE.md)
+- [Reporting template](TEMPLATES/REPORT.md)
+- [Ethical scope notes](ETHICS-AND-SCOPE.md)
+
+## Existing notes
+
+| Path | Current material |
 | --- | --- |
-| [01-Recon](01-Recon/README.md) | Exiftool, DNS, NetBIOS, SNMP and SMTP enumeration notes |
-| [03-Active-Directory-Attack-Flow](03-Active-Directory-Attack-Flow/README.md) | High-level AD assessment techniques and a basic enumeration reference |
-| [FTP ENUMERATION](FTP%20ENUMERATION/) | Legacy scratch directory; review before using as a reference |
+| [01-Recon](01-Recon/README.md) | ExifTool, DNS, NetBIOS, SNMP and SMTP enumeration notes |
+| [03-Active-Directory-Attack-Flow](03-Active-Directory-Attack-Flow/README.md) | High-level AD assessment flow and enumeration reference |
+| [FTP ENUMERATION](FTP%20ENUMERATION/) | Legacy scratch directory; review before relying on it |
 
-The previously documented 00–12 chapter structure was a roadmap, **not** an accurate representation of files already committed. This index lists only the material actually present.
+Existing content is preserved. New material makes the collection easier to navigate and more consistent as notes grow.
 
-## Study workflow
+## Suggested study loop
 
-1. **Scope:** Use isolated labs or systems explicitly authorized for testing.
-2. **Enumerate:** Build a repeatable service and host information checklist.
-3. **Analyze:** Record observations, evidence and assumptions.
-4. **Learn defenses:** Review logging and potential detection for each technique.
-5. **Document:** Write concise findings, reproduction notes and remediation ideas.
+1. Define target, authorization and timebox.
+2. Enumerate broadly, then validate the most promising paths.
+3. Keep commands, timestamps, assumptions and evidence together.
+4. Explain why a technique worked, not only which command worked.
+5. Record defensive visibility and remediation alongside offensive observations.
+6. Re-test from a clean starting point and write a concise report.
 
-## Related reference
+## Note quality standard
 
-[Offensive Security & Blue Team KnowledgeBase](https://github.com/djemoix/Offensive-Security-KnowledgeBase) has a broader, organized collection covering enumeration, web testing, privilege escalation, SOC analysis and reporting.
+Prefer reproducible notes with target and scope, prerequisites, exact commands with placeholders, expected versus observed output, sanitized evidence, hypothesis and conclusion, cleanup, and a defensive takeaway.
 
-## Next documentation improvements
+Never commit real credentials, tokens, customer data, private keys, malware, or sensitive target information.
 
-- [ ] Expand host/service recon workflows with prerequisites and expected output.
-- [ ] Add evidence collection and reporting templates.
-- [ ] Add defensive mappings and lab-safe exercises.
-- [ ] Review older tool names and commands for version compatibility.
-- [ ] Gradually reconcile the legacy FTP scratch directory.
+## Disclaimer
 
-## Ethical use
-
-All material is for educational use, authorized labs and permitted security testing. Do not include real-world credentials, customer information or out-of-scope targets.
+Use these materials only in systems you own or are explicitly authorized to assess. Follow the rules of engagement for every lab, course, client and exam environment. Stop when scope or authorization is unclear.
